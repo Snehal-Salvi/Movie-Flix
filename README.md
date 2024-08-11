@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# 🎬 Movie Flix 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movie Flix is a React application that allows users to browse movies, filter them by genre, search for specific movies, and manage a list of favorite movies. This application leverages the TMDb (The Movie Database) API to fetch and display movie data.
 
-## Available Scripts
+## 🌐 Deployment
 
-In the project directory, you can run:
+[Movie Flix]()
 
-### `npm start`
+## 📸 Application Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used 
 
-### `npm test`
+- **React**: A JavaScript library for building user interfaces.
+- **React Router**: For navigation and routing within the application.
+- **React Icons**: To use icons throughout the application.
+- **Toastify**: For toast notifications.
+- **CSS Modules**: For modular and scoped CSS styling.
+- **TMDb API**: To fetch movie data.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Features 
 
-### `npm run build`
+- **Movie Browsing**: View a list of popular movies.
+- **Filtering**: Filter movies by genre.
+- **Searching**: Search for movies by title.
+- **Favorites**: Add movies to a list of favorites and view them on a separate page.
+- **Movie Details**: View detailed information about a specific movie.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Installation 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get started with Movie Flix, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository**.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Navigate to the project directory**.
+3. **Install the dependencies**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Create a `.env` file** in the root directory and add your TMDb API key:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```env
+    REACT_APP_API_KEY=your_tmdb_api_key
+    REACT_APP_ACCESS_TOKEN=your_tmdb_access_token
+    ```
 
-## Learn More
+5. **Start the development server**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    npm start
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    The application will be running on `http://localhost:3000`.
 
-### Code Splitting
+## 🧩 Components 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Header
 
-### Analyzing the Bundle Size
+- **Description**: Displays the application title and icon.
+- **Path**: `./components/Header/Header.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Home
 
-### Making a Progressive Web App
+- **Description**: Displays the main page with a list of movies, search bar, and filter options.
+- **Path**: `./components/Home/Home.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Favorites
 
-### Advanced Configuration
+- **Description**: Shows the list of favorite movies.
+- **Path**: `./components/Favorites/Favorites.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### MovieDetails
 
-### Deployment
+- **Description**: Displays detailed information about a selected movie.
+- **Path**: `./components/Movie/MovieDetails.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Card
 
-### `npm run build` fails to minify
+- **Description**: Represents a movie card with a poster, title, and favorite button.
+- **Path**: `./components/Card/Card.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### FilterBar
+
+- **Description**: Allows users to filter movies by genre.
+- **Path**: `./components/Filter/FilterBar.js`
+
+### SearchBar
+
+- **Description**: Provides a search interface for finding movies by title.
+- **Path**: `./components/Search/SearchBar.js`
+
+### Loader
+
+- **Description**: Displays a loading spinner while data is being fetched.
+- **Path**: `./components/Loader/Loader.js`
+
+## 🎣 Hooks 
+
+### useInfiniteScroll
+
+- **Description**: Custom hook for implementing infinite scrolling.
+- **Path**: `./hooks/useInfiniteScroll.js`
+
+## 📖 Usage 
+
+- **Navigate**: Use the navigation links or browser back and forward buttons to move between pages.
+- **Search**: Type in the search bar to find specific movies.
+- **Filter**: Select a genre from the dropdown to filter the movie list.
+- **Favorites**: Click the heart icon on a movie card to add or remove it from your favorites list.
+
+
+## 👩‍💻 Authors
+
+- [@Snehal](https://github.com/Snehal-Salvi)
+
+
+
+

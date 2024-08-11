@@ -1,0 +1,55 @@
+.controlsSection {
+    flex-shrink: 0;
+    width: 100%;
+    height: 10vh;
+    margin-top: 10px;
+    display: flex;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.favourite {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    cursor: pointer;
+    width: 10%;
+}
+
+.favourite:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1px 4px rgb(0, 0, 0);
+}
+
+.favouriteIcon {
+    color: rgb(243, 16, 228);
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.favouriteName {
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    font-weight: bold;
+
+}
+
+@media (max-width: 968px) {
+    .favourite {
+        width: 90%;
+    }
+}
+
+@media (max-width: 968px) {
+    .controlsSection {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+}

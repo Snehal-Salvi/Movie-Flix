@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: fangsong;
+  background-color: #232522;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  background-color: #232522;
+  padding: 20px;
+  box-sizing: border-box;
+}

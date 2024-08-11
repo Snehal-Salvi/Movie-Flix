@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;  
+    scroll-behavior: smooth;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.noResults {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.loading {
+    color: #fff;
+    font-size: 1.5em;
+}

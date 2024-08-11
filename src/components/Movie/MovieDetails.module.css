@@ -1,0 +1,130 @@
+.container {
+  position: relative;
+  color: #e5e5e5;
+}
+
+.backButton {
+  top: 20px;
+  left: 20px;
+  background: #1858e3;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.backButton:hover {
+  background: #070c51;
+  color: rgb(170, 226, 247);
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.poster {
+  max-width: 100%;
+  height: 60vh;
+  border-radius: 8px;
+}
+
+.details {
+  max-width: 600px;
+  text-align: left;
+  background-color: #2e2e2e;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 2.5em;
+  margin: 10px 0;
+  background-color: #f39c12;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.overview {
+  font-size: 1.2em;
+  margin: 10px 0;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.releaseDate,
+.rating,
+.budget,
+.revenue,
+.homepage {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.releaseDate {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.rating {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.budget {
+  background-color: #9b59b6;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.revenue {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.homepage a {
+  color: #1abc9c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.homepage a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .detailsContainer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .poster {
+    max-width: 300px;
+    margin-right: 20px;
+  }
+
+  .details {
+    text-align: left;
+    max-width: 60%;
+  }
+}
