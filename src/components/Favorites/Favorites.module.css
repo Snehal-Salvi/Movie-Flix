@@ -1,3 +1,12 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+  scroll-behavior: smooth;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .heading {
   font-size: 2em;
   margin-bottom: 20px;
@@ -33,15 +42,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding: 15px;
-  scroll-behavior: smooth;
-  transition: opacity 0.5s ease-in-out;
-}
-
 .noFavorites {
   font-size: 2.5em;
   color: #f0f0f5;
@@ -51,4 +51,14 @@
   width: 100%;
   text-align: center;
   box-sizing: border-box;
+}
+
+@media (max-width: 968px) {
+  .container {
+    justify-content: center;
+  }
+
+  .backButton {
+    width: fit-content;
+  }
 }
