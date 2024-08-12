@@ -4,9 +4,13 @@ Movie Flix is a React application that allows users to browse movies, filter the
 
 ## 🌐 Deployment
 
-[Movie Flix]()
+[Movie Flix](https://stately-starship-3fe447.netlify.app)
 
 ## 📸 Application Demo
+
+
+https://github.com/user-attachments/assets/17c56ada-91b5-441b-8246-1d2069c7fed8
+
 
 
 ## 🛠️ Technologies Used 
